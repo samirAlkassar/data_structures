@@ -48,3 +48,19 @@ class LinkedList:
                 current_node.next = current_node.next.next
                 return
             current_node = current_node.next
+# create a new linked list
+my_list = LinkedList()
+
+# add some nodes to the linked list
+my_list.append(1)
+my_list.append(2)
+my_list.append(3)
+
+# display the linked list
+my_list.display()  # output: 1 -> 2 -> 3 -> None
+
+# delete a node from the linked list
+my_list.delete(2)
+
+# display the linked list again
+my_list.display()  # output: 1 -> 3 -> None
